@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomoro Coffee Clone</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar fixed-top navbar-expand-lg bg-navy" data-bs-theme="dark">
+    <div class="container py-1 px-4">
+        <a href="#hero" class="navbar-brand d-flex align-items-center">
+            <img src="assets/images/navbar.png" alt="logo" style="width: 40px;">
+            <span class="ms-2 fw-bold">TOMORO COFFEE</span>
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"><span class="navbar-toggler-icon"></span></button>
+        <div class="offcanvas offcanvas-end bg-navy" id="offcanvasNavbar">
+            <div class="offcanvas-header px-4">
+                <h5 class="offcanvas-title text-white">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-4">
+                <ul class="navbar-nav ms-lg-auto align-items-lg-center">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#menu" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Tentang</a></li>
+                    <li class="nav-item"><a href="#promo" class="nav-link">Promo</a></li>
+                    <li class="nav-item"><a href="#footer" class="nav-link">Kontak</a></li>
+                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a href="#promo" class="btn btn-orange px-4">Pesan Sekarang</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<div class="bg-navy text-white" id="hero">
+    <div class="container py-5 px-4">
+        <div class="row align-items-center">
+            <div class="col-md-5 order-md-2"><img class="img-fluid" src="assets/images/tomoro-coffee.png" alt="Tomoro Coffee"></div>
+            <div class="col-md-7 order-md-1">
+                <span class="badge badge-note rounded-pill px-3 py-2 mb-3"><i class="bi bi-cup-hot-fill text-orange me-1"></i> 100% Arabica Specialty Grade</span>
+                <h1 class="display-3 fw-bold">Good coffee, <span class="text-orange">for tomorrow.</span></h1>
+                <p class="fs-5 mt-3 text-white-50">Kopi berkualitas dengan harga terjangkau. Nikmati signature Aren Latte, Coconut Series, hingga menu rasa Nusantara seperti kopi pandan, dengan menu baru setiap bulan.</p>
+                <div class="d-flex flex-column flex-md-row mt-4">
+                    <a href="#menu" class="btn btn-orange btn-lg mb-3 me-md-3 px-4 py-3">Lihat Menu</a>
+                    <a href="#about" class="btn btn-outline-light btn-lg mb-3 px-4 py-3">Tentang Kami</a>
+                </div>
+                <div class="text-white-50 small">Tersedia di ratusan outlet · <a href="#footer">Cari outlet</a></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menu -->
+<div id="menu" class="bg-cream">
+    <div class="container py-5 px-4">
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold">Menu Andalan</h2>
+            <p class="fs-5 text-muted">Racikan favorit yang paling sering dipesan.</p>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="card menu-card h-100">
+                    <div class="menu-img bg-warning-subtle">
+                    <img src="assets/images/kopiaren.png" alt="Aren Latte">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Aren Latte</h5>
+                        <p class="card-text text-muted">Espresso, susu, dan gula aren khas Indonesia. Kopi susu aren mulai Rp22.000.</p>
+                        <span class="badge bg-warning text-dark">Best Seller</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card menu-card h-100">
+                    <div class="menu-img bg-warning-subtle">
+                    <img src="assets/images/coconut.png" alt="Coconut Aren Latte">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Coconut Aren Latte</h5>
+                        <p class="card-text text-muted">Perpaduan kopi arabika dengan kelapa asli yang segar.</p>
+                        <span class="badge bg-info text-dark">Coconut Series</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card menu-card h-100">
+                    <div class="menu-img bg-success-subtle">
+                    <img src="assets/images/pandan.png" alt="Pandan Coffee">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Pandan Coffee</h5>
+                        <p class="card-text text-muted">Aroma pandan yang harum berpadu dengan kopi yang pekat.</p>
+                        <span class="badge bg-success">Rasa Nusantara</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="card menu-card h-100">
+                    <div class="menu-img bg-secondary-subtle">
+                    <img src="assets/images/oatseries.png" alt="Oat Series">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Oat Series</h5>
+                        <p class="card-text text-muted">Latte dengan susu oat untuk pilihan nabati yang lembut.</p>
+                        <span class="badge bg-secondary">Plant-based</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About -->
+<div id="about">
+    <div class="container py-5 px-4">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="mb-3"><i class="bi bi-stars fs-2 bg-warning py-2 px-3 rounded-3 text-white"></i></div>
+                <h2 class="display-5 mb-3">Kopi enak untuk semua orang</h2>
+                <p class="fs-5 text-muted">Berdiri sejak 2022, Tomoro Coffee hadir dengan keyakinan bahwa kopi berkualitas harus bisa dinikmati siapa saja. Setiap cangkir dibuat dari biji arabika pilihan dan dilengkapi inovasi menu baru setiap bulan.</p>
+                <a class="icon-link icon-link-hover lead fw-semibold" href="#menu">Jelajahi menu <i class="bi bi-arrow-right mb-2"></i></a>
+            </div>
+            <div class="col-lg-6 mt-4 mt-lg-0">
+                <div class="row g-3 text-center">
+                    <div class="col-6"><div class="p-4 bg-cream rounded-3"><i class="bi bi-cup-hot fs-1 text-orange"></i><h3 class="mt-2">100%</h3><div class="text-muted">Arabica</div></div></div>
+                    <div class="col-6"><div class="p-4 bg-cream rounded-3"><i class="bi bi-shop fs-1 text-orange"></i><h3 class="mt-2">300+</h3><div class="text-muted">Outlet</div></div></div>
+                    <div class="col-6"><div class="p-4 bg-cream rounded-3"><i class="bi bi-calendar-plus fs-1 text-orange"></i><h3 class="mt-2">Tiap Bulan</h3><div class="text-muted">Menu Baru</div></div></div>
+                    <div class="col-6"><div class="p-4 bg-cream rounded-3"><i class="bi bi-wallet2 fs-1 text-orange"></i><h3 class="mt-2">Terjangkau</h3><div class="text-muted">Harga Bersahabat</div></div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Promo -->
+<div id="promo" class="bg-navy text-white">
+    <div class="container py-5 px-4 text-center">
+        <h2 class="display-6 fw-bold">Pesan lewat aplikasi, lebih hemat!</h2>
+        <p class="fs-5 text-white-50 mb-4">Dapatkan promo dan voucher menarik setiap hari.</p>
+        <button type="button" class="btn btn-orange btn-lg px-5 py-3"><i class="bi bi-phone me-2"></i>Download Aplikasi</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer" class="bg-dark text-white py-5">
+    <div class="container py-4 px-4">
+        <div class="row">
+            <div class="col-lg-4 mb-5">
+                <div class="d-flex align-items-center"><img src="assets/images/navbar.png  " alt="logo" style="width: 40px;"><div class="fs-5 ms-2 fw-bold">TOMORO COFFEE</div></div>
+                <p class="mt-3 text-white-50"><small>Website ini adalah clone untuk tugas praktikum Bootstrap dan bukan situs resmi Tomoro Coffee.</small></p>
+            </div>
+            <div class="col-6 col-lg-2 offset-lg-1 mb-5">
+                <h5>Navigasi</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#hero">Home</a></li>
+                    <li class="mb-2"><a href="#menu">Menu</a></li>
+                    <li class="mb-2"><a href="#about">Tentang</a></li>
+                    <li class="mb-2"><a href="#promo">Promo</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2 mb-5">
+                <h5>Perusahaan</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#">Karier</a></li>
+                    <li class="mb-2"><a href="#">Franchise</a></li>
+                    <li class="mb-2"><a href="#">Kebijakan Privasi</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 mb-5">
+                <h5>Ikuti Kami</h5>
+                <a href="#" class="fs-4 me-3"><i class="bi-instagram"></i></a>
+                <a href="#" class="fs-4 me-3"><i class="bi-tiktok"></i></a>
+                <a href="#" class="fs-4"><i class="bi-youtube"></i></a>
+            </div>
+        </div>
+        <div class="text-center text-white-50 small border-top border-secondary pt-4">&copy; 2026 Tomoro Coffee Clone · Praktikum PAW Modul 7</div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
